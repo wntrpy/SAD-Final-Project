@@ -1,0 +1,152 @@
+/*LAHAT NG STYLES NA RELATED SA TEMPLATE GAWA NALANG NG NEW CSS FILE PARA SA CONTENT NA IPAPASOK SA DASHBOARD*/
+
+.main-container{
+  position: relative;
+}
+
+.main-container header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 14rem;
+  height: 4.625rem;
+  background-color: var(--blue);
+}
+
+.main-container footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 14rem;
+  height: 4.625rem;
+  background-color: var(--green);
+}
+
+/* SIDEBAR STYLES*/
+#sidebar{
+  position: fixed;
+  background-color: var(--gray);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 14rem;
+  color: white;
+  gap: 1.5rem;
+  z-index: 10;
+}
+
+.sidebar-header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1.25rem;
+  display: inline-flex;
+  margin: 1.5rem 1rem;
+}
+
+.sidebar-user-profile{
+  display: flex;
+  gap: 1.5rem;
+  display: inline-flex;
+  margin-left: 0.75rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px white solid;
+}
+
+.sidebar-user-profile-left-container{
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/*side bar navs*/
+.sidebar-nav{
+  z-index: 15;
+  pointer-events: auto;
+}
+
+.sidebar-nav a{
+  margin: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+
+/*CONTENT CONTAINER*/
+#content-container {
+  width: 103rem;
+  height: 50rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  margin-top: 5.6rem; 
+  margin-right: auto; 
+  display: flex;
+  flex-direction: column;
+  margin-left: 15.5rem;
+  padding: 2rem; 
+}
+
+/* Footer Content Container Styles*/
+.content-container-footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  height: 10rem;
+  margin-top: auto; 
+  padding: 0 2rem; 
+}
+
+.pagination-status-container {
+  font-size: 1.75rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-container button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 120px;
+  width: 11em;
+  height: 3.5em;
+}
+
+.nextBtn {
+  background-color: var(--green);
+  border: none;
+  color: white;
+}
+
+.backBtn {
+  border: 3px var(--green) solid;
+  background-color: transparent;
+  color: black;
+}
+
+.nextBtn:hover, .backBtn:hover {
+  transition: 0.5s all ease-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.logout-button{
+  margin: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-top: 15rem;
+}
