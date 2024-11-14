@@ -36,6 +36,7 @@ select {
   --blue: #032447;
   --gray: #545454;
   --button-active-state: #D9D9D9;
+  --input-text-color: #f3f4f6;
 
   /* Shadow */
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);

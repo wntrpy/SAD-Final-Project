@@ -6,16 +6,22 @@
     <title>Log in</title>
     <link rel="stylesheet" href="/styles/login.css" />
     <link rel="stylesheet" href="/styles/general.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
   </head>
   <body>
+    <script>
+      /* console.log("Screen Width: " + screen.width + "px");
+      console.log("Screen Height: " + screen.height + "px");*/
+    </script>
+
     <div class="main-container">
       <div class="image-container">
         <img src="/img/logo1.png" alt="logo1" />
       </div>
 
-      <form>
+      <form id="login-form">
         <div class="form-content">
-          <h2>Log in to your account</h2>
+          <h2 class="login-title">Log in to your account</h2>
           <div class="email-field">
             <label>Email</label>
             <input type="text" id="email-field" />
@@ -25,72 +31,102 @@
             <input type="password" id="password-field" />
           </div>
           <a href="#">Forgot your password?</a>
+          <!--need type=button para hindi i-view as type=submit-->
           <button type="button" class="login-btn" onclick="testLogin(event)">
             Log in
           </button>
           <p>
             Don't have an account?
-            <a href="#" id="create-account">Create an account</a>
+            <button
+              id="create-account"
+              type="button"
+              onclick="openRegisterPopup()"
+            >
+              Create an account
+            </button>
           </p>
         </div>
       </form>
+
+      <!--===========================================================================================================================================-->
+      <!--USER REGISTER POPUP-->
+      <!--===========================================================================================================================================-->
+
+      <!--yung overlay is para magmukhang inactive yung ibang functionalities, and ma-highlight yung register-->
+      <div class="overlay"></div>
+      <div id="user-register-popup">
+        <form id="register-form" onsubmit="validatePassword(event)">
+          <h2 style="font-size: 2.5rem">Your Personal Information</h2>
+          <p class="register-info">
+            Ensure all details are accurate before proceeding.
+          </p>
+
+          <div class="register-inputs-group">
+            <div>
+              <label for="register-first-name-field">First Name*</label>
+              <input type="text" id="register-first-name-field" required />
+            </div>
+
+            <div>
+              <label for="register-middle-name-field">Middle Name*</label>
+              <input type="text" id="register-middle-name-field" required />
+            </div>
+
+            <div>
+              <label for="register-last-name-field">Last Name*</label>
+              <input type="text" id="register-last-name-field" required />
+            </div>
+          </div>
+
+          <div class="register-inputs-group">
+            <div>
+              <label for="register-date-of-birth-field">Date of Birth*</label>
+              <input type="date" id="register-date-of-birth-field" required />
+            </div>
+
+            <div>
+              <label for="register-phone-no-field">Phone No.*</label>
+              <input type="tel" id="register-phone-no-field" required />
+            </div>
+
+            <div>
+              <label for="register-email-field">Email*</label>
+              <input type="email" id="register-email-field" required />
+            </div>
+          </div>
+
+          <div class="register-inputs-group">
+            <div>
+              <label for="register-password-field">Password*</label>
+              <input type="password" id="register-password-field" required />
+            </div>
+
+            <div>
+              <label for="register-confirm-password-field"
+                >Confirm Password*</label
+              >
+              <input
+                type="password"
+                id="register-confirm-password-field"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button class="back-button-register" onclick="closeRegisterPopup()">
+              <img src="/img/icons/arrow-left-icon.svg" alt="" />
+              <p style="color: black; margin: 0px">Back</p>
+            </button>
+
+            <input type="submit" value="Register" class="submitBtn" />
+          </div>
+        </form>
+      </div>
     </div>
 
-    <script>
-      function testLogin(event) {
-        event.preventDefault();
-
-        const emailInput = document.querySelector("#email-field").value;
-        const passwordInput = document.querySelector("#password-field").value;
-
-        const accounts = {
-          applicant1: {
-            password: "1234",
-            role: "applicant",
-          },
-          scholar1: {
-            password: "qwerty",
-            role: "scholar",
-          },
-          staff1: {
-            password: "54321",
-            role: "staff",
-          },
-        };
-
-        let role = null;
-
-        //checks if nag exists yung inputted email account sa accounts(applicant1, scholar1, staff1)
-        //checks if magmamatch yung password sa password na ininput
-        //if success, role = kung anong role kabilang yung account
-        if (
-          accounts[emailInput] &&
-          accounts[emailInput].password === passwordInput
-        ) {
-          role = accounts[emailInput].role;
-        } else {
-          alert("Invalid email or password");
-          return;
-        }
-
-        // lipat page based sa role
-        //file paths para ng dashboards since dashboards mauunang mag appear after login
-        switch (role) {
-          case "applicant":
-            window.location.href =
-              "/html/applicants html/applicants-dashboard.html";
-            break;
-          case "scholar":
-            window.location.href =
-              "/html/scholars html/scholars-dashboard.html";
-            break;
-          case "staff":
-            window.location.href = "/html/staffs html/staffs-dashboard.html";
-            break;
-          default:
-            alert("Role not recognized");
-        }
-      }
-    </script>
+    <!--SWEET ALERTTTTTT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/scripts/login.js"></script>
   </body>
 </html>
