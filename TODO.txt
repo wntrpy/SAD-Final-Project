@@ -1,0 +1,18 @@
+1. My Profile Page
+--add dummy personal info per accounts
+--after registering, dapat madisplay yung mga pinrovide na info ni user sa register
+
+
+2. Notification Page
+3. Sidebar navs active state                                                
+
+4. Mouse back button issue (implement POPSTATE if possible) [optional]      ✅
+--Puwede to as additional feature hahahah
+
+5. Press ENTER sa keyboard para hindi na pumipindot ng buttons (optional)
+--Password field sa Login page
+--Confirm password sa registration
+
+6.Dapat mawala yung mga inputs sa textfield ng registration after mag register ni user tapos cinlick niya yung back buttonnn
+
+7. 

@@ -51,7 +51,7 @@ function testLogin(event) {
   }
 
   // lipat page based sa role
-  //file paths para ng dashboards since dashboards mauunang mag appear after login
+  //file paths ng dashboards since dashboards mauunang mag appear after login
   switch (role) {
     case "applicant":
       window.location.href =
@@ -64,8 +64,6 @@ function testLogin(event) {
     case "staff":
       window.location.href = "/html/staffs html/staffs-dashboard.html";
       break;
-    default:
-      alert("Role not recognized");
   }
 }
 
@@ -130,3 +128,32 @@ function validatePassword(event) {
     }
   });
 }
+
+
+/***************************************************************************************************************/
+/***** POPSTATE ************************************************************************************************/
+/***************************************************************************************************************/
+
+//automatic na nagrurun to after matapos mag load ng pages
+window.addEventListener('load', () => {
+    //state, window title, url() = structure ng Browser History Entry
+    //(check browser history)
+    //PUSHES new entry sa browser history na ang URL is si LOGIN PAGE
+    history.pushState(null, null, window.location.href); //Browser History: [Applicant Dashboard Entry(example lang to), Login Page Entry]
+
+    // Function kapag pinindot yung back button ng mouse
+    window.addEventListener('popstate', () => {
+      //Add ulit ng new browser entry na LOGIN PAGE pa din yung URL
+      //Bale ganito yung itsura ng updated Browser History: 
+        //[Applicant Dashboard Entry, login Page Entry, Login Page Entry]
+      //Hindi makakabalik si user sa previous pages after mag log out kasi yung previous entry ng Browser History is LOGIN PAGE
+      history.pushState(null, null, window.location.href);
+
+      //Display yung sweet alert error pag pinindot yung back button
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "You must log in to access the previous page.",
+      });
+    });
+});
