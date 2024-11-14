@@ -27,7 +27,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 14rem;
+  width: 14.813rem;
   color: white;
   gap: 1.5rem;
   z-index: 10;
@@ -40,6 +40,25 @@
   gap: 1.25rem;
   display: inline-flex;
   margin: 1rem 1rem;
+}
+
+.sidebar-header img{
+  height: 37px;
+  width: 154px;
+}
+
+.notification-container{
+  border-radius: 100%;
+  height: 43px;
+  width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-container img{
+  width: 20.35px;
+  height: 23px;
 }
 
 .sidebar-user-profile{
@@ -88,14 +107,15 @@ hr{
   margin-top: 1rem;
 }
 
-.sidebar-nav a:hover, .sidebar-user-profile:hover{
+.sidebar-nav a:hover, .sidebar-user-profile:hover, .notification-container:hover{
+  transition: 0.5s all ease-in-out;
   background-color: rgba(217, 217, 217, 0.21);
 }
 
 
 /*CONTENT CONTAINER*/
 #content-container {
-  width: 103rem;
+  width: 102rem;
   height: 50rem;
   background-color: white;
   border-radius: 20px;
@@ -104,7 +124,7 @@ hr{
   margin-right: auto; 
   display: flex;
   flex-direction: column;
-  margin-left: 15.5rem;
+  margin-left: 259px;
   padding: 2rem; 
 }
 
