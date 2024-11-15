@@ -3,12 +3,6 @@
 }
 
 .main-container header{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 14rem;
-  height: 4.625rem;
-  background-color: var(--blue);
 }
 
 .main-container footer{
@@ -151,7 +145,6 @@ hr{
 #dropdown a:hover {
   transition: all 0.5s ease-in-out;
   background-color: #333;
-
 }
 
 
