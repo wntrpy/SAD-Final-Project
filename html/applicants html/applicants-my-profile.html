@@ -4,6 +4,7 @@
     <title>Applicant My Profile</title>
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/my-profile.css" />
   </head>
   <body>
     <div class="main-container">
@@ -76,7 +77,132 @@
       <!--CONTENT CONTAINER-->
       <!--===========================================================================================================================================-->
       <div id="content-container">
-        <p>Applicant My Profile</p>
+        <form id="profileForm" action="/updateProfile" method="POST">
+          <div class="profile-form-first-row">
+            <div class="profile-form-image-container">
+              <div>
+                <img src="/img/hannipy.jpeg" alt="" />
+              </div>
+              <div>
+                <button type="button">
+                  <img src="/img/icons/camera-icon.png" alt="" />
+                  Upload new picture
+                </button>
+                <button type="button">
+                  <img src="/img/icons/change-password-icon.png" alt="" />
+                  Change Password
+                </button>
+              </div>
+            </div>
+
+            <fieldset>
+              <legend>Personal Information</legend>
+              <div class="field-row">
+                <div>
+                  <label>Last Name</label>
+                  <input type="text" value="Last Name" readonly />
+                </div>
+                <div>
+                  <label>Given Name</label>
+                  <input type="text" value="Given Name" readonly />
+                </div>
+                <div>
+                  <label>Middle Name</label>
+                  <input type="text" value="Middle Name" readonly />
+                </div>
+                <div>
+                  <label>Gender</label>
+                  <input type="text" value="Gender" />
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div>
+                  <label>Date of Birth</label>
+                  <input type="date" value="Date of Birth" />
+                </div>
+
+                <div>
+                  <label>Place of Birth</label>
+                  <input
+                    type="text"
+                    value="User's Place of birth"
+                    id="place-of-birth"
+                  />
+                </div>
+                <div>
+                  <label>Civil Status</label>
+                  <input type="text" value="Civil Status" />
+                </div>
+              </div>
+
+              <div class="field-row" style="margin-bottom: 2rem">
+                <div>
+                  <label>Nationality</label>
+                  <input type="text" placeholder="Nationality" />
+                </div>
+                <div>
+                  <label>Religion</label>
+                  <input type="text" placeholder="Religion" />
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div>
+                  <label>Contact no.</label>
+                  <input type="text" placeholder="Contact no." />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <fieldset class="permanent-address-fields" style="margin-top: 1rem">
+            <legend>Permanent Address</legend>
+            <div class="full-address-container">
+              <label
+                >Address (House #/Block/Street/Subsdivision/Building)</label
+              >
+              <input type="text" placeholder="Full Address" />
+            </div>
+
+            <div class="address-field-row">
+              <div>
+                <label>Zipcode</label>
+                <input type="text" placeholder="Zipcode" />
+              </div>
+              <div>
+                <label>Barangay</label>
+                <input type="text" placeholder="Barangay" />
+              </div>
+              <div>
+                <label>Province/Region</label>
+                <input type="text" placeholder="Province/Region" />
+              </div>
+              <div>
+                <label>Municipality/City"</label>
+                <input type="text" placeholder="Municipality/City" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="emergency-fields">
+            <legend>In case of emergency, notify:</legend>
+            <div>
+              <label>Emergency contact person</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Emergency address</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Emergency Mobile no.</label>
+              <input type="text" />
+            </div>
+            <button type="submit" id="my-profile-update-button">Update</button>
+          </fieldset>
+        </form>
       </div>
 
       <footer></footer>

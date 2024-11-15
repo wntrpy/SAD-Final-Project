@@ -181,7 +181,6 @@ p {
   width: 22.313rem;
   height: 3.563rem;
   border-radius: 10px;
-  border: none;
   padding: 0rem 1.5rem;
   border: 1px solid #ccc;
   background-color: var(--input-text-color); 

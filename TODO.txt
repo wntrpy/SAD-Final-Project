@@ -23,5 +23,5 @@
 
 10. Working calendar sa log in
 
-11. Sidebar fixes (notification page, my profile page, yung options sa giled, active state, remove log out sa sidebar)
+11. Sidebar fixes (notification page, my profile page, yung options sa giled, active state, remove log out sa sidebar)          ✅
 
