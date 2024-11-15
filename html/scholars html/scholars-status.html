@@ -15,12 +15,18 @@
       <div id="sidebar">
         <div class="sidebar-header">
           <img src="/img/icons/systemLogo-icon.png" alt="" width="140px" />
-          <a href="#" class="notification-container">
+          <a
+            href="/html/scholars html/scholars-notifiation.html"
+            class="notification-container"
+          >
             <img src="/img/icons/notification-icon.png" alt="" />
           </a>
         </div>
 
-        <div class="sidebar-user-profile">
+        <button
+          class="sidebar-user-profile"
+          onclick="toggleDropDown('#dropdown')"
+        >
           <div class="sidebar-user-profile-left-container">
             <img
               id="user-profile-image"
@@ -33,7 +39,8 @@
               <p id="user-last-name">Pirnandow</p>
             </div>
           </div>
-        </div>
+        </button>
+
         <hr />
 
         <div class="sidebar-nav">
@@ -52,7 +59,10 @@
             <p>Renewal</p>
           </a>
 
-          <a href="/html/scholars html/scholars-status.html">
+          <a
+            href="/html/scholars html/scholars-status.html"
+            style="background-color: var(--nav-hover-active-state)"
+          >
             <img src="/img/icons/status-icon.svg" alt="" />
             <p>Status</p>
           </a>
@@ -60,11 +70,6 @@
           <a href="/html/scholars html/scholars-feedback.html">
             <img src="/img/icons/feedback.png" alt="" />
             <p>Feedback</p>
-          </a>
-
-          <a href="/index.html" class="logout-button">
-            <img src="/img/icons/logout-icon.png" alt="" />
-            <p>Log out</p>
           </a>
         </div>
       </div>
@@ -78,5 +83,18 @@
 
       <footer></footer>
     </div>
+
+    <!--===========================================================================================================================================-->
+    <!--DROPDOWN MENU-->
+    <!--===========================================================================================================================================-->
+    <div class="dropdown" id="dropdown">
+      <a href="/html/scholars html/scholars-my-profile.html">My Profile</a>
+      <a href="/index.html">Log out</a>
+    </div>
+
+    <!--===========================================================================================================================================-->
+    <!--SCRIPTS-->
+    <!--===========================================================================================================================================-->
+    <script src="/scripts/open-popups.js"></script>
   </body>
 </html>

@@ -40,7 +40,7 @@
             <button
               id="create-account"
               type="button"
-              onclick="openRegisterPopup()"
+              onclick="openPopup('#user-register-popup')"
             >
               Create an account
             </button>
@@ -114,7 +114,10 @@
           </div>
 
           <div class="button-container">
-            <button class="back-button-register" onclick="closeRegisterPopup()">
+            <button
+              class="back-button-register"
+              onclick="closePopup('#user-register-popup')"
+            >
               <img src="/img/icons/arrow-left-icon.svg" alt="" />
               <p style="color: black; margin: 0px">Back</p>
             </button>
@@ -125,9 +128,10 @@
       </div>
     </div>
 
-    <!--SWEET ALERTTTTTT-->
+    <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/scripts/login.js"></script>
     <script src="/scripts/validate.js"></script>
+    <script src="/scripts/open-popups.js"></script>
   </body>
 </html>

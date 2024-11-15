@@ -1,13 +1,13 @@
-1. My Profile Page
+1. My Profile Page Contents
 --add dummy personal info per accounts
---after registering, dapat madisplay yung mga pinrovide na info ni user sa register
+--after registration, dapat madisplay yung mga pinrovide na info ni user sa My Profile
 
-2. Notification Page
-3. Sidebar navs active state                                                
+2. Notification Page Contents
+3. Sidebar navs active state      ✅                                          
 
 4. Mouse back button issue (implement POPSTATE if possible) [optional]      ✅
 --lumalabas yung alert after mag register
---lumalabas yung alert after pindutin yung forgot password
+--pag confirm password nalang walang input or may input na lahat tapos nag back button si user, nag aappear yung sweet alert
 
 5. Press ENTER sa keyboard para hindi na pumipindot ng buttons (optional)
 --Password field sa Login page
@@ -16,3 +16,12 @@
 6.Dapat mawala yung mga inputs sa textfield ng registration after mag register ni user tapos cinlick niya yung back buttonnn
 
 7. Pag cinlick yung Profile sa sidebar, dun mag aappear yung options na My Profile & Logout
+
+8. Fix sidebar ng staffs
+
+9. Gawing input type = email yung email text field sa login
+
+10. Working calendar sa log in
+
+11. Sidebar fixes (notification page, my profile page, yung options sa giled, active state, remove log out sa sidebar)
+

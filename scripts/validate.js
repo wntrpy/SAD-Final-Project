@@ -50,7 +50,7 @@ function validatePassword(event) {
 /***************************************************************************************************************/
 
 function checkIfFieldsAreEmpty(emailInput, passwordInput){
-  if (!emailInput || !passwordInput) { //if null
+  if (!emailInput || !passwordInput) { //if falsy
     Swal.fire({
       icon: "error",
       title: "Error",
@@ -58,7 +58,7 @@ function checkIfFieldsAreEmpty(emailInput, passwordInput){
     });
     return false;
   }
-  return true; //if not null
+  return true; //if truthy
 }
 
 function checkCredentials(emailInput, passwordInput) {

@@ -15,12 +15,18 @@
       <div id="sidebar">
         <div class="sidebar-header">
           <img src="/img/icons/systemLogo-icon.png" alt="" width="140px" />
-          <a href="#" class="notification-container">
+          <a
+            href="/html/staffs html/staffs-notification.html"
+            class="notification-container"
+          >
             <img src="/img/icons/notification-icon.png" alt="" />
           </a>
         </div>
 
-        <div class="sidebar-user-profile">
+        <button
+          class="sidebar-user-profile"
+          onclick="toggleDropDown('#dropdown')"
+        >
           <div class="sidebar-user-profile-left-container">
             <img
               id="user-profile-image"
@@ -33,7 +39,8 @@
               <p id="user-last-name">Pirnandow</p>
             </div>
           </div>
-        </div>
+        </button>
+
         <hr />
 
         <div class="sidebar-nav">
@@ -62,7 +69,10 @@
             <p>Announcement</p>
           </a>
 
-          <a href="/html/staffs html/staffs-view-feedbacks.html">
+          <a
+            href="/html/staffs html/staffs-view-feedbacks.html"
+            style="background-color: var(--nav-hover-active-state)"
+          >
             <img src="/img/staffs img/view-feedbacks-icon.png" alt="" />
             <p>View Feedbacks</p>
           </a>
@@ -75,11 +85,6 @@
           <a href="/html/staffs html/staffs-generate-reports.html">
             <img src="/img/staffs img/generate-reports-icon.png" alt="" />
             <p>Generate Reports</p>
-          </a>
-
-          <a href="/index.html" class="logout-button">
-            <img src="/img/icons/logout-icon.png" alt="" />
-            <p>Log out</p>
           </a>
         </div>
       </div>
@@ -94,5 +99,18 @@
       <footer></footer>
       <a href="/html/content-personal-info.html"></a>
     </div>
+
+    <!--===========================================================================================================================================-->
+    <!--DROPDOWN MENU-->
+    <!--===========================================================================================================================================-->
+    <div class="dropdown" id="dropdown">
+      <a href="/html/staffs html/staffs-my-profile.html">My Profile</a>
+      <a href="/index.html">Log out</a>
+    </div>
+
+    <!--===========================================================================================================================================-->
+    <!--SCRIPTS-->
+    <!--===========================================================================================================================================-->
+    <script src="/scripts/open-popups.js"></script>
   </body>
 </html>

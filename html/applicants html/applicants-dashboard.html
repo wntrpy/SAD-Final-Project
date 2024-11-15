@@ -13,7 +13,7 @@
     </script>
 
     <div class="main-container">
-      <header>Main Header</header>
+      <header></header>
 
       <!--===========================================================================================================================================-->
       <!--SIDEBAR-->
@@ -21,12 +21,18 @@
       <div id="sidebar">
         <div class="sidebar-header">
           <img src="/img/icons/systemLogo-icon.png" alt="" width="140px" />
-          <a href="#" class="notification-container">
+          <a
+            href="/html/applicants html/applicants-notification.html"
+            class="notification-container"
+          >
             <img src="/img/icons/notification-icon.png" alt="" />
           </a>
         </div>
 
-        <div class="sidebar-user-profile">
+        <button
+          class="sidebar-user-profile"
+          onclick="toggleDropDown('#dropdown')"
+        >
           <div class="sidebar-user-profile-left-container">
             <img
               id="user-profile-image"
@@ -39,11 +45,15 @@
               <p id="user-last-name">Pirnandow</p>
             </div>
           </div>
-        </div>
+        </button>
+
         <hr />
 
         <div class="sidebar-nav">
-          <a href="/html/applicants html/applicants-dashboard.html">
+          <a
+            href="/html/applicants html/applicants-dashboard.html"
+            style="background-color: var(--nav-hover-active-state)"
+          >
             <img src="/img/icons/dashboard-icon.svg" alt="" />
             <p>Dashboard</p>
           </a>
@@ -67,11 +77,6 @@
             <img src="/img/icons/feedback.png" alt="" />
             <p>Feedback</p>
           </a>
-
-          <a href="/index.html" class="logout-button">
-            <img src="/img/icons/logout-icon.png" alt="" />
-            <p>Log out</p>
-          </a>
         </div>
       </div>
 
@@ -84,5 +89,18 @@
 
       <footer></footer>
     </div>
+
+    <!--===========================================================================================================================================-->
+    <!--DROPDOWN MENU-->
+    <!--===========================================================================================================================================-->
+    <div class="dropdown" id="dropdown">
+      <a href="/html/applicants html/applicants-my-profile.html">My Profile</a>
+      <a href="/index.html">Log out</a>
+    </div>
+
+    <!--===========================================================================================================================================-->
+    <!--SCRIPTS-->
+    <!--===========================================================================================================================================-->
+    <script src="/scripts/open-popups.js"></script>
   </body>
 </html>
