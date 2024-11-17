@@ -44,9 +44,11 @@
 }
 
 .profile-form-image-container button img{
-  width: 14px;
-  height: 14px;
-  object-fit: cover;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /*INPUT*/
@@ -78,7 +80,7 @@ fieldset input{
   margin-top: 0.5rem;
 }
 
-#place-of-birth{
+#place-of-birth-field{
   width: 514px;
   height: 55px;
 }
@@ -168,4 +170,135 @@ fieldset input{
   height: 3.5em;
   cursor: pointer;
   font-size: 1rem;
+}
+
+
+/***************************************************************************************************************/
+/***** CHANGE PASSWORD STYLES **********************************************************************************/
+/***************************************************************************************************************/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#change-password-popup{
+  visibility: hidden;
+  width: 700px;
+  height: 468px;
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  top: 45%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+/*not including submit kasi button yon*/
+#change-password-popup input:not([type="submit"]) {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: var(--input-text-color);
+}
+
+#change-password-popup label{
+  font-weight: 600;
+}
+
+/*container that contains label and input*/
+.change-password-field-container{
+  margin-left: 5rem;
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+
+
+.button-container{
+  margin-top: 90px;
+  margin-left: 52%;
+}
+
+.change-pass-back-button{
+  border: var(--blue) 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+
+.submitBtn, #choose-photo-btn{
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 120px;
+  width: 146.656px;
+  height:  46.6562px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/***************************************************************************************************************/
+/***** UPLOAD NEW PICTURE STYLES *******************************************************************************/
+/***************************************************************************************************************/
+#upload-new-pic-popup{
+  visibility: hidden;
+  width: 700px;
+  height: 163px;
+  background-color: white;
+  z-index: 2;
+  position: fixed;
+  top: 45%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+#upload-new-pic-popup div{
+  text-align: center;
+}
+
+.new-pic-back-btn-container{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+#upload-new-pic-popup .new-pic-back-button{
+  width: 32px;
+  height: 31px;
+  border-radius: 100%;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+#upload-new-pic-popup button img{
+  width: 13.62px;
+  height: 13.62px;
+}
+
+#choose-photo-btn{
 }

@@ -8,6 +8,10 @@ function closePopup(id) {
   document.querySelector(id).style.visibility = "hidden";
 }
 
+/***************************************************************************************************************/
+/***** MY PROFILE DROW DOWN ************************************************************************************/
+/***************************************************************************************************************/
+
 function toggleDropDown(id) {
   const dropdown = document.querySelector(id);
 
@@ -26,3 +30,5 @@ document.addEventListener("click", function (event) {
     dropdown.style.visibility = "hidden";
   }
 });
+
+

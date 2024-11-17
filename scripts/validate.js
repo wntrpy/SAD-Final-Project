@@ -21,8 +21,8 @@ function validatePassword(event) {
       text: "Password did not match!",
     });
 
-    getPasswordField.value = ""; //not necessarily needed to, trip ko lang ilagay
-    getConfirmPasswordField.value = ""; //saka para na din hindi magka error pag ibaback ni user tapos hindi niya tinanggal yung password na naka input, pag " " kasi yung value niya, mag eequal both fields eh
+    getPasswordField.value = ""; 
+    getConfirmPasswordField.value = ""; //para hindi magka error pag ibaback ni user tapos hindi niya tinanggal yung password na naka input, pag " " kasi yung value niya, mag eequal both fields
     return false; //stops yung form sa pagsusubmit
   }
 
@@ -39,7 +39,7 @@ function validatePassword(event) {
   }).then((result) => {
     if (result.isConfirmed) {
       closeRegisterPopup();
-      form.submit(); //submits yung form after i click yung button sa sweet alert
+      form.submit(); //submits yung form after i click yung button sa alert
     }
   });
 }
@@ -61,44 +61,26 @@ function checkIfFieldsAreEmpty(emailInput, passwordInput){
   return true; //if truthy
 }
 
+
 function checkCredentials(emailInput, passwordInput) {
-  const accounts = {
-    applicant1: {password: "1234", role: "applicant",},
-    scholar1: {password: "qwerty",role: "scholar",},
-    staff1: {password: "54321",role: "staff",},
-  };
+  // Check if the emailInput exists as a key in the accounts object
+  if (accounts[emailInput]) {
+    const account = accounts[emailInput]; // Get the account object
+    const password = account.password; // Get the account's password
 
-  let role = null;
- //checks if nag exists yung inputted email account sa accounts(applicant1, scholar1, staff1)
-  //checks if magmamatch yung password sa password na ininput
-  //if success, role = kung anong role kabilang yung account
-  //display an alert kapag hindi nag eexist yung account
-
-  if (accounts[emailInput] && accounts[emailInput].password === passwordInput) {
-    role = accounts[emailInput].role;
-  } 
-  else {
-    Swal.fire({
-      icon: "error",
-      title: "Error",
-      text: "Invalid account!",
-    });
-    return false; //log in failed
+    // Check if the password matches
+    if (password === passwordInput) {
+      return emailInput; // Return the matched key (applicant1, scholar1, staff1)
+    }
   }
 
-  // lipat page based sa role
-  //file paths ng dashboards since dashboards mauunang mag appear after login
-  switch (role) {
-    case "applicant":
-      window.location.href =
-        "/html/applicants html/applicants-dashboard.html";
-      break;
-    case "scholar":
-      window.location.href =
-        "/html/scholars html/scholars-dashboard.html";
-      break;
-    case "staff":
-      window.location.href = "/html/staffs html/staffs-dashboard.html";
-      break;
-  }
+  // If no match is found, show error message and return null
+  Swal.fire({
+    icon: "error",
+    title: "Error",
+    text: "Invalid account!",
+  });
+  return null;
 }
+
+
