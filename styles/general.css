@@ -35,12 +35,16 @@ select {
   --yellow: #EDE7BB;
   --blue: #032447;
   --gray: #545454;
-  --button-active-state: #D9D9D9;
   --input-text-color: #f3f4f6;
+
+  /*button states*/
+  --button-active-state: #D9D9D9;
+  --blue-button-hover: #094584;
+  --button-hover-scale: scale(1.05); 
   --nav-hover-active-state: rgba(217, 217, 217, 0.21);
 
   /* Shadow */
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   /*SIZES*/
 
@@ -49,36 +53,3 @@ select {
   --lp-input-height: 3.863rem;
   --lp-header-font-size: 1.5rem;
 }
-
-
-/*
-CHEAT SHIT
-
-1rem = 16px
-2rem = 32px
-3rem = 48px
-4rem = 64px
-5rem = 80px
-6rem = 96px
-7rem = 112px
-8rem = 128px
-9rem = 144px
-10rem = 160px
-11rem = 176px
-12rem = 192px
-13rem = 208px
-14rem = 224px
-15rem = 240px
-16rem = 256px
-17rem = 272px
-18rem = 288px
-19rem = 304px
-20rem = 320px
-25rem = 400px
-30rem = 480px
-40rem = 640px
-50rem = 800px
-60rem = 960px
-100rem = 1600px
-
-*/

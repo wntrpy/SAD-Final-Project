@@ -38,7 +38,7 @@ function validatePassword(event) {
     text: "Registration Successful!",
   }).then((result) => {
     if (result.isConfirmed) {
-      closeRegisterPopup();
+      closePopup('#user-register-popup');
       form.submit(); //submits yung form after i click yung button sa alert
     }
   });

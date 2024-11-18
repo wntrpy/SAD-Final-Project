@@ -40,6 +40,11 @@
   gap: 0.75rem;
   font-size: 12px;
   border-radius: 5px;
+}
+
+.profile-form-image-container button:hover
+{
+  transition: 0.5s all ease-in-out;
   box-shadow: var(--box-shadow);
 }
 
@@ -58,13 +63,11 @@ fieldset{
   margin-top: 1rem;
 }
 
-
 legend{
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
-
 
 fieldset div{
   margin-left: 2rem;
@@ -99,7 +102,6 @@ fieldset input{
 }
 
 /*ADDRESS FIELDS*/
-
 .address-field-row{
   display: flex;
   gap: 0px;
@@ -139,29 +141,17 @@ fieldset input{
   width: 91rem;
 }
 
-/*EMERGENCY FIELDS*/
-.emergency-fields{
-  margin: 0px;
+/*PROFILE FORM FOOTER*/
+.profile-form-footer, .family-profile-form-footer, .school-profile-form-footer{
+  margin-top: 95px;
   display: flex;
   gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: space-between;
 }
 
-.emergency-fields div{
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-}
-
-.emergency-fields input{
-  margin: 0px;
-  margin-top: 0.5rem;
-  width: 352px;
-  height: 55px;
-}
-
-#my-profile-update-button{
-  margin-top: 2rem;
-  margin-left: 18rem;
+#my-profile-update-button, #my-profile-back-button, .my-profile-next-button{
   background-color: var(--blue);
   color: white;
   border: none;
@@ -170,6 +160,9 @@ fieldset input{
   height: 3.5em;
   cursor: pointer;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -228,7 +221,6 @@ fieldset input{
   align-items: center;
 }
 
-
 .button-container{
   margin-top: 90px;
   margin-left: 52%;
@@ -241,7 +233,6 @@ fieldset input{
   justify-content: center;
   background-color: transparent;
 }
-
 
 .submitBtn, #choose-photo-btn{
   background-color: var(--blue);
@@ -300,5 +291,74 @@ fieldset input{
   height: 13.62px;
 }
 
-#choose-photo-btn{
+#my-profile-update-button:hover{
+  transition: 0.5s all ease-in-out;
+  background-color: var(--blue-button-hover);
+  box-shadow: var(--box-shadow);
+  transform: var(--button-hover-scale);
+}
+
+
+
+/***************************************************************************************************************/
+/***** PAGE 2 ************************************************************************************/
+/***************************************************************************************************************/
+h2{
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+
+.family-profile-form-first-row{
+  margin: 0px;
+}
+
+.family-profile-form-first-row input, .mother-profile-firt-row input{
+  margin: 0px;
+  width: 360px;
+  height: 50px;
+  margin-top: 0.5rem;
+}
+
+.family-profile-form-first-row legend, .mother-profile-firt-row legend{
+  margin-bottom: 1rem;
+}
+
+
+.family-profile-form-footer div, .school-profile-form-footer div{
+  display: flex;
+  gap: 1rem;
+}
+
+/*PAGE 3*/
+#my-profile-back-button{
+  border: none;
+  justify-content: space-evenly;
+  color: black;
+  border: 3px var(--blue) solid;
+  background-color: transparent;
+}
+
+#current-school-field, #school-address-field{
+  width: 720px;
+}
+
+#grade-level {
+  width: 360px; 
+  height: 50px;
+  background-color: var(--input-text-color);
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  padding: 1rem; 
+  margin-top: 0.5rem;
+}
+
+#grade-level option {
+  font-size: 1rem; 
+  padding: 0.5rem; 
+}
+
+.school-profile-form-footer{
+  margin-top: 26%;
 }

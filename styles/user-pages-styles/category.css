@@ -1,0 +1,15 @@
+body{
+  overflow: hidden;
+}
+
+.category-main-container {
+  background-color: white;
+  width: 105rem;
+  height: 62rem;
+  margin-left: 235px;
+  background-image: url(/img/category-bg.png);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin-top: 5px;
+}

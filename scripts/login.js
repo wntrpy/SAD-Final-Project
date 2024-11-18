@@ -53,9 +53,6 @@ function testLogin(event) {
   if (accountKey) {
     const account = accounts[accountKey];
 
-    // Save accountKey to localStorage
-    localStorage.setItem("accountKey", accountKey);
-
     // Redirect based on role
     switch (account.role) {
       case "applicant":

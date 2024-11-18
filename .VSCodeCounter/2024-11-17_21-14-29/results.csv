@@ -1,0 +1,49 @@
+"filename", "language", "HTML", "CSS", "JavaScript", "XML", "comment", "blank", "total"
+"d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-application.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-category.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-dashboard.html", "HTML", 112, 0, 0, 0, 14, 22, 148
+"d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-feedback.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-my-profile.html", "HTML", 328, 0, 0, 0, 18, 26, 372
+"d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-notification.html", "HTML", 74, 0, 0, 0, 12, 13, 99
+"d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-status.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\forgot-password.html", "HTML", 20, 0, 0, 0, 0, 1, 21
+"d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-category.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-dashboard.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-feedback.html", "HTML", 76, 0, 0, 0, 12, 12, 100
+"d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-my-profile.html", "HTML", 328, 0, 0, 0, 18, 26, 372
+"d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-notifiation.html", "HTML", 74, 0, 0, 0, 12, 13, 99
+"d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-renewal.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-status.html", "HTML", 76, 0, 0, 0, 12, 13, 101
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-announcement.html", "HTML", 89, 0, 0, 0, 12, 16, 117
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-calendar.html", "HTML", 89, 0, 0, 0, 12, 16, 117
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-dashboard.html", "HTML", 91, 0, 0, 0, 12, 16, 119
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-generate-email.html", "HTML", 89, 0, 0, 0, 12, 16, 117
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-generate-reports.html", "HTML", 89, 0, 0, 0, 12, 16, 117
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-my-profile.html", "HTML", 341, 0, 0, 0, 18, 29, 388
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-notification.html", "HTML", 87, 0, 0, 0, 12, 16, 115
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-programs.html", "HTML", 89, 0, 0, 0, 12, 16, 117
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-verification.html", "HTML", 89, 0, 0, 0, 12, 16, 117
+"d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-view-feedbacks.html", "HTML", 89, 0, 0, 0, 12, 16, 117
+"d:\vscode projs\web\SAD final proj backup\img\icons\arrow-down-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\arrow-left-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\arrow-right-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\attachment-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\category-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\check-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\dashboard-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\hamburger-icon.svg", "XML", 0, 0, 0, 9, 0, 1, 10
+"d:\vscode projs\web\SAD final proj backup\img\icons\info-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\payout-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\img\icons\status-icon.svg", "XML", 0, 0, 0, 3, 0, 1, 4
+"d:\vscode projs\web\SAD final proj backup\index.html", "HTML", 117, 0, 0, 0, 6, 16, 139
+"d:\vscode projs\web\SAD final proj backup\scripts\calendar.js", "JavaScript", 0, 0, 59, 0, 27, 27, 113
+"d:\vscode projs\web\SAD final proj backup\scripts\login.js", "JavaScript", 0, 0, 73, 0, 10, 14, 97
+"d:\vscode projs\web\SAD final proj backup\scripts\my-profile.js", "JavaScript", 0, 0, 67, 0, 12, 21, 100
+"d:\vscode projs\web\SAD final proj backup\scripts\open-popups.js", "JavaScript", 0, 0, 23, 0, 3, 9, 35
+"d:\vscode projs\web\SAD final proj backup\scripts\validate.js", "JavaScript", 0, 0, 56, 0, 15, 16, 87
+"d:\vscode projs\web\SAD final proj backup\styles\calendar.css", "CSS", 0, 92, 0, 0, 0, 20, 112
+"d:\vscode projs\web\SAD final proj backup\styles\general.css", "CSS", 0, 37, 0, 0, 35, 12, 84
+"d:\vscode projs\web\SAD final proj backup\styles\layout.css", "CSS", 0, 195, 0, 0, 6, 27, 228
+"d:\vscode projs\web\SAD final proj backup\styles\login.css", "CSS", 0, 182, 0, 0, 4, 29, 215
+"d:\vscode projs\web\SAD final proj backup\styles\my-profile.css", "CSS", 0, 247, 0, 0, 12, 45, 304
+"Total", "-", 2879, 753, 278, 39, 438, 637, 5024

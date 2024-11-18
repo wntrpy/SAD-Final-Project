@@ -4,7 +4,7 @@
     <title>Applicant My Profile</title>
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/layout.css" />
-    <link rel="stylesheet" href="/styles/my-profile.css" />
+    <link rel="stylesheet" href="/styles/user-pages-styles/my-profile.css" />
   </head>
   <body>
     <div class="main-container">
@@ -79,6 +79,9 @@
       <div id="content-container">
         <form id="profileForm" action="/updateProfile" method="POST">
           <div class="profile-form-first-row">
+            <!--===========================================================================================================================================-->
+            <!--CONTAINER FOR PROFILE PICT, UPLOAD NEW PICTURE, AND CHANGE PASSWORD-->
+            <!--===========================================================================================================================================-->
             <div class="profile-form-image-container">
               <div>
                 <img src="/img/hannipy.jpeg" alt="" id="profile-picture" />
@@ -101,6 +104,9 @@
               </div>
             </div>
 
+            <!--===========================================================================================================================================-->
+            <!--PERSONAL INFORMATION FIELDS-->
+            <!--===========================================================================================================================================-->
             <fieldset>
               <legend>Personal Information</legend>
               <div class="field-row">
@@ -194,6 +200,9 @@
             </fieldset>
           </div>
 
+          <!--===========================================================================================================================================-->
+          <!--PERMANENT ADDRESS FIELDS-->
+          <!--===========================================================================================================================================-->
           <fieldset class="permanent-address-fields" style="margin-top: 1rem">
             <legend>Permanent Address</legend>
             <div class="full-address-container">
@@ -233,33 +242,16 @@
             </div>
           </fieldset>
 
-          <fieldset class="emergency-fields">
-            <legend>In case of emergency, notify:</legend>
-            <div>
-              <label>Emergency contact person</label>
-              <input
-                type="text"
-                id="emergency-contact-person-field"
-                placeholder="Emergency Contact Person"
-              />
-            </div>
-            <div>
-              <label>Relationship</label>
-              <input
-                type="text"
-                id="emergency-address-field"
-                placeholder="Relationship"
-              />
-            </div>
-            <div>
-              <label>Contact Number</label>
-              <input
-                type="text"
-                id="emergency-contact-number-field"
-                placeholder="Contact number"
-              />
-            </div>
-            <button type="submit" id="my-profile-update-button">Update</button>
+          <!--===========================================================================================================================================-->
+          <!--PAGE, AND BUTTONS CONTAINER -->
+          <!--===========================================================================================================================================-->
+          <fieldset class="profile-form-footer">
+            <p>Page 1 of 3</p>
+            <a
+              href="/html/applicants html/applicants-my-profile-2.html"
+              class="my-profile-next-button"
+              >Next</a
+            >
           </fieldset>
         </form>
       </div>

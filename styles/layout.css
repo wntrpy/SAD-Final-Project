@@ -120,39 +120,6 @@ hr{
   background-color: var(--nav-hover-active-state);
 }
 
- /* DROPDOWN MENU STYLES */
- #dropdown {
-  visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 6%;
-  left: 13.5%;
-  background-color: var(--gray);
-  color: white;
-  border-radius: 15px;
-  width: 180px;
-  height: 100px;
-  box-shadow: var(--box-shadow);
-}
-
-#dropdown a {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 0;
-  width: 100%;
-}
-
-#dropdown a:hover {
-  transition: all 0.5s ease-in-out;
-  background-color: #333;
-}
-
 
 /*CONTENT CONTAINER*/
 #content-container {
@@ -214,7 +181,6 @@ hr{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-
 .logout-button{
   margin: 1rem 1rem;
   display: flex;
@@ -225,4 +191,39 @@ hr{
   border: none;
   font-size: 1rem;
   margin-top: 15rem;
+}
+
+
+ /* DROPDOWN MENU STYLES (My Profile & Logout)*/
+ #dropdown {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 6%;
+  left: 13.5%;
+  background-color: var(--gray);
+  color: white;
+  border-radius: 15px;
+  width: 180px;
+  height: 100px;
+  box-shadow: var(--box-shadow);
+  z-index: 100;
+}
+
+#dropdown a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#dropdown a:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
 }
