@@ -11,5 +11,183 @@ body{
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
-  margin-top: 5px;
+  margin-top: 0.25rem;
+}
+
+.category-cards-container{
+  padding-left: 2rem;
+  background-color: transparent;
+  width: 60%;
+  height: 80%;
+  border: 2px transparent solid;
+}
+
+/*PANG GROUP SA CARDS PARA MAGMUKHANG 2X2 GRID*/
+.category-cards-container div{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.category-cards-container h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+}
+
+.category-card, .category-card-large{
+  width: 431px;
+  height: 101px;
+  background-color: var(--category-cards);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  box-shadow: var(--inner-shadow);
+}
+
+.category-card button, .category-card-large button{
+  width: 144px;
+  height: 34px;
+  border-radius: 11px;
+  color: white;
+  background-color: var(--green);
+  position: absolute;
+  border: none;
+  bottom: -10px;
+  right: 5px;
+  box-shadow: var(--inner-shadow);
+}
+
+.category-card-large{
+  height: 150px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/***************************************************************************************************************/
+/***** USER REGISTER STYLES ************************************************************************************/
+/***************************************************************************************************************/
+#shs-public-popup, #shs-private-popup, #suc-popup, #os-private-popup{
+  width: 1358px;
+  height: 782px;
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  visibility: hidden;
+}
+
+#shs-public-popup h1, #shs-private-popup h1, #suc-popup h1, #os-private-popup h1{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.category-popup-main-container{
+  display: flex;
+  gap: 2rem;
+}
+
+/*LIST OF REQUIREMENT*/
+
+
+.list-of-requirements-container{
+  width: 760px;
+  height: 650px;
+  border: 2px black solid;
+  border-radius: 20px;
+  margin-left: 2rem;
+}
+
+.list-of-requirements-container header, .application-date-container header, .available-slots-container header{
+  height: 53px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lists-of-requirements-content{
+  padding: 2rem;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.download-requirements-btn{
+  background-color: var(--green);
+  color: white;
+  padding: 1em 2em;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-left: 53%;
+}
+
+/*APPLICATION DATE*/
+.application-date-container, .available-slots-container{
+  border: 2px black solid;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.application-date-content, .available-slots-content{
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.available-slots-container{
+  height: 160px;
+  margin-top: 3rem;
+}
+
+.application-available-container button{
+  background-color: var(--green);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  width: 183px;
+  height: 52px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 90px;
+  margin-left: 65%;
+}
+
+.application-available-container button img{
+  width: 25px;
+  transform: rotate(180deg);
 }
