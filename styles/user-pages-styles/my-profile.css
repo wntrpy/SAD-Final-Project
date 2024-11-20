@@ -218,9 +218,6 @@ fieldset input{
 }
 
 .change-pass-back-button, .change-pass-submit-button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 120px;
   width: 11em;
   height: 3.5em;

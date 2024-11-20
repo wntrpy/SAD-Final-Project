@@ -40,49 +40,101 @@ span{
 }
 
 /*PERSONAL INFO*/
-#personal-info-form{
-  border: 2px black solid;
-  padding: 1rem;
+#personal-info-form {
+  margin-top: 3rem;
 }
 
-.personal-info-main-container{
-  border: 2px red solid;
-  padding: 1rem;
+.personal-info-main-container {
+  margin-bottom: 16%;
 }
 
-.program-category-container{
-  border: 2px green solid;
-  padding: 1rem;
+.program-category-container {
+  margin-bottom: 20px;
+  margin-left: 1.75rem;
 }
 
-#category-dropdown{
-  background-color: var(--input-text-color); 
-  border: 1px solid #ccc;
-  width: 835px;
-  height: 50px;
+
+.program-category-container label{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#category-dropdown {
+  width: 700px;
+  height: 60px;
   padding: 0rem 1.5rem;
   border-radius: 5px;
   margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: gray;
 }
 
-#category-dropdown option{
-  width: 835px;
+.application-personal-info-container {
 }
 
-.application-personal-info-container{
-  border: 2px red solid;
-  padding: 2rem;
+.application-personal-info-container .personal-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.application-personal-info-container .personal-info-row{
+.application-personal-info-container input,
+#grade-level {
+  width: calc(25% - 10px); 
+  height: 60px;
 }
 
-.application-personal-info-container input{
-  margin: 0px;
+#school-name-field {
+  width: calc(50% - 10px); 
+}
+
+/*FOOTER*/
+
+.personal-info-form-footer{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal-info-form-footer div{
+  display: flex;
+  flex-direction: row !important; 
+}
+
+.personal-info-form-footer div a{
+  background-color: #fff;
+}
+
+#application-form-next-button,
+#application-form-back-button{
+  width: 11em;
+  height: 3.5em;
+  border-radius: 120px;
+  gap: 2rem;
+}
+
+
+/*CONTACT INFO PAGE*/
+.program-contact-info-container{
+
+}
+
+.program-contact-info-container label{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.program-contact-info-container div{
+  display: flex;
+  flex-direction: row !important;
+}
+
+.program-contact-info-container div input{
   width: 360px;
-  height: 50px;
+  height: 60px;
 }
 
-#grade-level{
-  width: 360px;
-}
+
+
+/*LINISIN MO CSS MO ANDUMI TIGNAN, PATI MGA NAMES NG VARS*/

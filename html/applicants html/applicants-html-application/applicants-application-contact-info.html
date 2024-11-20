@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Applicant Application</title>
+    <title>Contact Information</title>
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/user-pages-styles/application.css" />
@@ -83,31 +83,52 @@
           <!--Container for Category and Personal Info-->
           <div class="personal-info-main-container">
             <!--Category Container-->
-            <div class="program-category-container">
-              <label>Programang nais mapabilang</label>
-              <select id="category-dropdown">
-                <option value="" disabled selected>Select a category</option>
-                <option value="os-private">OS PRIVATE</option>
-                <option value="suc-lc">
-                  STATE/LOCAL UNIVERSITIES AND COLLEGES (SUC's /LC's)
-                </option>
-                <option value="shs-public">SHS PUBLIC</option>
-                <option value="shs-private">SHS PRIVATE</option>
-              </select>
+            <div class="program-contact-info-container">
+              <label>Contact Information</label>
+              <div>
+                <input
+                  type="email"
+                  id="application-email-field"
+                  placeholder="qwert@gmail.com"
+                />
+                <input
+                  type="number"
+                  id="application-contact-number-field"
+                  placeholder="0901001"
+                />
+              </div>
             </div>
 
             <!--APPLICATION PERSONAL INFO CONTAINER-->
             <div class="application-personal-info-container">
-              <h2 style="margin-left: 1.75rem">Personal Information</h2>
+              <h2 style="margin-left: 1.75rem; font-size: 2rem">
+                Permanent address
+              </h2>
               <!--FIRST ROW-->
               <div
                 class="personal-info-row"
                 style="display: flex; gap: 10px; flex-direction: row"
               >
-                <input type="text" id="given-name" placeholder="Given name" />
-                <input type="text" id="middle-name" placeholder="Middle name" />
-                <input type="text" id="last-name" placeholder="Last name" />
-                <input type="number" id="age" placeholder="Age" />
+                <input
+                  type="text"
+                  id="application-zipcode-field"
+                  placeholder="Zipcode"
+                />
+                <input
+                  type="text"
+                  id="application-city-field"
+                  placeholder="City/Municipality"
+                />
+                <input
+                  type="text"
+                  id="application-province-field"
+                  placeholder="Province"
+                />
+                <input
+                  type="number"
+                  id="application-barangay-field"
+                  placeholder="Barangay"
+                />
               </div>
 
               <!--SECOND ROW-->
@@ -121,39 +142,34 @@
                 "
               >
                 <input
-                  type="date"
-                  id="date-of-birth"
-                  placeholder="Date of Birth"
+                  type="text"
+                  id="application-village-field"
+                  placeholder="Village/Subdivision"
                 />
+
                 <input
                   type="text"
-                  id="school-name-field"
-                  placeholder="Paaralang pinapasukan"
+                  id="application-unitNo-field"
+                  placeholder="House no/Unit no."
                 />
-                <select id="grade-level">
-                  <option value="" disabled selected>Grade Level</option>
-                  <option value="1">High school</option>
-                  <option value="2">Senior high school</option>
-                  <option value="3">College</option>
-                </select>
               </div>
             </div>
           </div>
 
           <div class="personal-info-form-footer">
-            <p style="font-size: 1.5rem; margin-top: 3rem">Page 1 of 5</p>
+            <p style="font-size: 1.5rem; margin-top: 3rem">Page 2 of 5</p>
 
             <div>
               <a
                 id="application-form-back-button"
-                href="/html/applicants html/applicants-html-application/applicants-application.html"
+                href="/html/applicants html/applicants-html-application/applicants-application-personal-info.html"
               >
                 <img src="/img/icons/arrow-left-icon.svg" alt="" />
                 Back
               </a>
 
               <a
-                href="/html/applicants html/applicants-html-application/applicants-application-contact-info.html"
+                href="/html/applicants html/applicants-html-application/applicants-application-family-info.html"
                 id="application-form-next-button"
               >
                 Next

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Applicant Application</title>
+    <title>Family Information</title>
     <link rel="stylesheet" href="/styles/general.css" />
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/user-pages-styles/application.css" />
@@ -81,33 +81,39 @@
       <div id="application-content-container">
         <form id="personal-info-form">
           <!--Container for Category and Personal Info-->
-          <div class="personal-info-main-container">
-            <!--Category Container-->
-            <div class="program-category-container">
-              <label>Programang nais mapabilang</label>
-              <select id="category-dropdown">
-                <option value="" disabled selected>Select a category</option>
-                <option value="os-private">OS PRIVATE</option>
-                <option value="suc-lc">
-                  STATE/LOCAL UNIVERSITIES AND COLLEGES (SUC's /LC's)
-                </option>
-                <option value="shs-public">SHS PUBLIC</option>
-                <option value="shs-private">SHS PRIVATE</option>
-              </select>
-            </div>
-
-            <!--APPLICATION PERSONAL INFO CONTAINER-->
-            <div class="application-personal-info-container">
-              <h2 style="margin-left: 1.75rem">Personal Information</h2>
+          <div class="personal-info-main-container" style="margin-bottom: 11%">
+            <!--Category Container: Father-->
+            <div class="program-contact-info-container">
+              <label>Father</label>
               <!--FIRST ROW-->
               <div
                 class="personal-info-row"
                 style="display: flex; gap: 10px; flex-direction: row"
               >
-                <input type="text" id="given-name" placeholder="Given name" />
-                <input type="text" id="middle-name" placeholder="Middle name" />
-                <input type="text" id="last-name" placeholder="Last name" />
-                <input type="number" id="age" placeholder="Age" />
+                <input
+                  type="text"
+                  id="father-given-name"
+                  name="father_given_name"
+                  placeholder="Given name"
+                />
+                <input
+                  type="text"
+                  id="father-middle-name"
+                  name="father_middle_name"
+                  placeholder="Middle name"
+                />
+                <input
+                  type="text"
+                  id="father-last-name"
+                  name="father_last_name"
+                  placeholder="Last name"
+                />
+                <input
+                  type="text"
+                  id="father-mobile-number"
+                  name="father_mobile_number"
+                  placeholder="Mobile phone no."
+                />
               </div>
 
               <!--SECOND ROW-->
@@ -121,43 +127,117 @@
                 "
               >
                 <input
-                  type="date"
-                  id="date-of-birth"
-                  placeholder="Date of Birth"
+                  type="text"
+                  id="father-civil-status"
+                  name="father_civil_status"
+                  placeholder="Civil Status"
                 />
                 <input
                   type="text"
-                  id="school-name-field"
-                  placeholder="Paaralang pinapasukan"
+                  id="father-contact-number"
+                  name="father_contact_number"
+                  placeholder="Contact number"
                 />
-                <select id="grade-level">
-                  <option value="" disabled selected>Grade Level</option>
-                  <option value="1">High school</option>
-                  <option value="2">Senior high school</option>
-                  <option value="3">College</option>
-                </select>
+                <input
+                  type="text"
+                  id="father-occupation"
+                  name="father_occupation"
+                  placeholder="Occupation"
+                />
+                <input
+                  type="text"
+                  id="father-annual-gross-income"
+                  name="father_annual_gross_income"
+                  placeholder="Annual Gross Income"
+                />
+              </div>
+            </div>
+
+            <!--APPLICATION PERSONAL INFO CONTAINER: Mother-->
+            <div class="application-personal-info-container">
+              <label>Mother</label>
+              <!--FIRST ROW-->
+              <div
+                class="personal-info-row"
+                style="display: flex; gap: 10px; flex-direction: row"
+              >
+                <input
+                  type="text"
+                  id="mother-given-name"
+                  name="mother_given_name"
+                  placeholder="Given name"
+                />
+                <input
+                  type="text"
+                  id="mother-middle-name"
+                  name="mother_middle_name"
+                  placeholder="Middle name"
+                />
+                <input
+                  type="text"
+                  id="mother-last-name"
+                  name="mother_last_name"
+                  placeholder="Last name"
+                />
+                <input
+                  type="text"
+                  id="mother-mobile-number"
+                  name="mother_mobile_number"
+                  placeholder="Mobile phone no."
+                />
+              </div>
+
+              <!--SECOND ROW-->
+              <div
+                class="personal-info-row"
+                style="
+                  display: flex;
+                  gap: 10px;
+                  margin-top: 10px;
+                  flex-direction: row;
+                "
+              >
+                <input
+                  type="text"
+                  id="mother-civil-status"
+                  name="mother_civil_status"
+                  placeholder="Civil Status"
+                />
+                <input
+                  type="text"
+                  id="mother-contact-number"
+                  name="mother_contact_number"
+                  placeholder="Contact number"
+                />
+                <input
+                  type="text"
+                  id="mother-occupation"
+                  name="mother_occupation"
+                  placeholder="Occupation"
+                />
+                <input
+                  type="text"
+                  id="mother-annual-gross-income"
+                  name="mother_annual_gross_income"
+                  placeholder="Annual Gross Income"
+                />
               </div>
             </div>
           </div>
 
           <div class="personal-info-form-footer">
-            <p style="font-size: 1.5rem; margin-top: 3rem">Page 1 of 5</p>
+            <p style="font-size: 1.5rem; margin-top: 3rem">Page 3 of 5</p>
 
             <div>
               <a
                 id="application-form-back-button"
-                href="/html/applicants html/applicants-html-application/applicants-application.html"
+                href="/html/applicants html/applicants-html-application/applicants-application-contact-info.html"
               >
                 <img src="/img/icons/arrow-left-icon.svg" alt="" />
                 Back
               </a>
 
-              <a
-                href="/html/applicants html/applicants-html-application/applicants-application-contact-info.html"
-                id="application-form-next-button"
-              >
-                Next
-              </a>
+              <a href="#" id="application-form-next-button"> Next </a>
             </div>
           </div>
         </form>

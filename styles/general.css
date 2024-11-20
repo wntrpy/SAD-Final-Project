@@ -68,13 +68,17 @@ select {
 .change-pass-submit-button,
 .category-card button, 
 .category-card-large button,
-.application-available-container button
+.application-available-container button,
+#application-form-next-button
 {
   background-color: var(--green);
   border: none;
   color: white;
   font-size: 1rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /***************************************************************************************************************/
@@ -83,11 +87,18 @@ select {
 .login-btn:hover,
 .submitBtn:hover,
 #my-profile-update-button:hover, 
-.my-profile-next-button:hover
+.my-profile-next-button:hover,
+#upload-new-pic-popup .new-pic-back-button:hover,
+#choose-photo-btn:hover,
+.change-pass-submit-button:hover,
+.category-card button:hover, 
+.category-card-large button:hover,
+.application-available-container button:hover,
+#application-form-next-button:hover,
+#proceed-button:hover
 {
   transition: 0.5s all ease-in-out;
   background-color: var(--green); 
-  box-shadow: var(--box-shadow);
   transform: var(--button-hover-scale);
 }
 
@@ -97,7 +108,8 @@ select {
 /***************************************************************************************************************/
 .back-button-register,
 #my-profile-back-button,
-.change-pass-back-button
+.change-pass-back-button,
+#application-form-back-button
 {
   border: var(--green) 3px solid;
   display: flex;
@@ -106,6 +118,8 @@ select {
   background-color: transparent;
   text-align:center;
   font-size: 1rem;
+  color: black;
+  font-weight: 600;
 }
 
 
@@ -117,23 +131,27 @@ select {
 #password-field,
 #change-password-popup input:not([type="submit"]),
 fieldset input,
-.application-personal-info-container input
+.application-personal-info-container input,
+.program-contact-info-container div input
 {
   border: 1px solid #ccc;
   background-color: var(--input-text-color); 
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  border-radius: 10px;
 }
 
 
 /***************************************************************************************************************/
 /***** ALL DROPDOWN ************************************************************************************/
 /***************************************************************************************************************/
-#grade-level{
+#grade-level,
+#category-dropdown
+{
   background-color: var(--input-text-color);
   border: 1px solid #ccc; 
   padding: 1rem; 
-
+  border-radius: 10px;
 }
 
 /*LAHAT ELEMENTS NA MAY SAME STYLE DITO ILALAGAY KESA PAULIT ULIT KADA PAGES*/
