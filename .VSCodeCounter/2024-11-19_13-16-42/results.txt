@@ -1,0 +1,90 @@
+Date : 2024-11-19 13:16:42
+Directory : d:\vscode projs\web\SAD final proj backup
+Total : 51 files,  4878 codes, 503 comments, 743 blanks, all 6124 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |         28 |      3,591 |        394 |        483 |      4,468 |
+| CSS        |          7 |        978 |         37 |        164 |      1,179 |
+| JavaScript |          5 |        270 |         72 |         85 |        427 |
+| XML        |         11 |         39 |          0 |         11 |         50 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                           |         51 |      4,878 |        503 |        743 |      6,124 |
+| . (Files)                                                                                   |          1 |        117 |          6 |         16 |        139 |
+| html                                                                                        |         27 |      3,474 |        388 |        467 |      4,329 |
+| html (Files)                                                                                |          1 |         20 |          0 |          1 |         21 |
+| html\applicants html                                                                        |          9 |      1,530 |        172 |        190 |      1,892 |
+| html\scholars html                                                                          |          7 |        782 |         90 |        103 |        975 |
+| html\staffs html                                                                            |         10 |      1,142 |        126 |        173 |      1,441 |
+| img                                                                                         |         11 |         39 |          0 |         11 |         50 |
+| img\icons                                                                                   |         11 |         39 |          0 |         11 |         50 |
+| scripts                                                                                     |          5 |        270 |         72 |         85 |        427 |
+| styles                                                                                      |          7 |        978 |         37 |        164 |      1,179 |
+| styles (Files)                                                                              |          3 |        419 |         15 |         69 |        503 |
+| styles\user-pages-styles                                                                    |          4 |        559 |         22 |         95 |        676 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                    | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-application.html  | HTML       |         76 |         12 |         13 |        101 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-category.html     | HTML       |        353 |         39 |         57 |        449 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-dashboard.html    | HTML       |        112 |         14 |         18 |        144 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-feedback.html     | HTML       |         76 |         12 |         13 |        101 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-my-profile-2.html | HTML       |        254 |         21 |         20 |        295 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-my-profile-3.html | HTML       |        201 |         20 |         17 |        238 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-my-profile.html   | HTML       |        308 |         30 |         26 |        364 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-notification.html | HTML       |         74 |         12 |         13 |         99 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-status.html       | HTML       |         76 |         12 |         13 |        101 |
+| d:\vscode projs\web\SAD final proj backup\html\forgot-password.html                         | HTML       |         20 |          0 |          1 |         21 |
+| d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-category.html         | HTML       |         76 |         12 |         13 |        101 |
+| d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-dashboard.html        | HTML       |         76 |         12 |         13 |        101 |
+| d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-feedback.html         | HTML       |         76 |         12 |         12 |        100 |
+| d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-my-profile.html       | HTML       |        328 |         18 |         26 |        372 |
+| d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-notifiation.html      | HTML       |         74 |         12 |         13 |         99 |
+| d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-renewal.html          | HTML       |         76 |         12 |         13 |        101 |
+| d:\vscode projs\web\SAD final proj backup\html\scholars html\scholars-status.html           | HTML       |         76 |         12 |         13 |        101 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-announcement.html         | HTML       |         89 |         12 |         16 |        117 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-calendar.html             | HTML       |         89 |         12 |         16 |        117 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-dashboard.html            | HTML       |         91 |         12 |         16 |        119 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-generate-email.html       | HTML       |         89 |         12 |         16 |        117 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-generate-reports.html     | HTML       |         89 |         12 |         16 |        117 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-my-profile.html           | HTML       |        341 |         18 |         29 |        388 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-notification.html         | HTML       |         87 |         12 |         16 |        115 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-programs.html             | HTML       |         89 |         12 |         16 |        117 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-verification.html         | HTML       |         89 |         12 |         16 |        117 |
+| d:\vscode projs\web\SAD final proj backup\html\staffs html\staffs-view-feedbacks.html       | HTML       |         89 |         12 |         16 |        117 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\arrow-down-icon.svg                     | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\arrow-left-icon.svg                     | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\arrow-right-icon.svg                    | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\attachment-icon.svg                     | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\category-icon.svg                       | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\check-icon.svg                          | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\dashboard-icon.svg                      | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\hamburger-icon.svg                      | XML        |          9 |          0 |          1 |         10 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\info-icon.svg                           | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\payout-icon.svg                         | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\img\icons\status-icon.svg                         | XML        |          3 |          0 |          1 |          4 |
+| d:\vscode projs\web\SAD final proj backup\index.html                                        | HTML       |        117 |          6 |         16 |        139 |
+| d:\vscode projs\web\SAD final proj backup\scripts\calendar.js                               | JavaScript |         59 |         27 |         27 |        113 |
+| d:\vscode projs\web\SAD final proj backup\scripts\login.js                                  | JavaScript |         72 |          9 |         13 |         94 |
+| d:\vscode projs\web\SAD final proj backup\scripts\my-profile.js                             | JavaScript |         60 |         18 |         20 |         98 |
+| d:\vscode projs\web\SAD final proj backup\scripts\open-popups.js                            | JavaScript |         23 |          3 |          9 |         35 |
+| d:\vscode projs\web\SAD final proj backup\scripts\validate.js                               | JavaScript |         56 |         15 |         16 |         87 |
+| d:\vscode projs\web\SAD final proj backup\styles\general.css                                | CSS        |         41 |          5 |         12 |         58 |
+| d:\vscode projs\web\SAD final proj backup\styles\layout.css                                 | CSS        |        196 |          6 |         28 |        230 |
+| d:\vscode projs\web\SAD final proj backup\styles\login.css                                  | CSS        |        182 |          4 |         29 |        215 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\calendar.css             | CSS        |         92 |          0 |         20 |        112 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\category.css             | CSS        |        164 |          6 |         23 |        193 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\dashboard.css            | CSS        |          7 |          0 |          0 |          7 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\my-profile.css           | CSS        |        296 |         16 |         52 |        364 |
+| Total                                                                                       |            |      4,878 |        503 |        743 |      6,124 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -29,6 +29,7 @@
   justify-content: space-between;
 }
 
+/*BUTTON FOR UPLOADE NEW PICT AND PASSWORD*/
 .profile-form-image-container button {
   margin-top: 1rem;
   display: flex;
@@ -74,8 +75,6 @@ fieldset div{
 }
 
 fieldset input{
-  background-color: var(--input-text-color); 
-  border: 1px solid #ccc;
   width: 249px;
   height: 50px;
   padding: 0rem 1.5rem;
@@ -152,14 +151,9 @@ fieldset input{
 }
 
 #my-profile-update-button, #my-profile-back-button, .my-profile-next-button{
-  background-color: var(--blue);
-  color: white;
-  border: none;
   border-radius: 120px;
   width: 11em;
   height: 3.5em;
-  cursor: pointer;
-  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,16 +196,12 @@ fieldset input{
 
 /*not including submit kasi button yon*/
 #change-password-popup input:not([type="submit"]) {
-  border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: var(--input-text-color);
 }
 
 #change-password-popup label{
   font-weight: 600;
-}
+} 
 
 /*container that contains label and input*/
 .change-password-field-container{
@@ -221,28 +211,19 @@ fieldset input{
   align-items: center;
 }
 
+/*BUTTONS(CHANGE PASS[BACK, SUBMIT])*/
 .button-container{
-  margin-top: 90px;
-  margin-left: 52%;
+  margin-top: 20px;
+  margin-left: 43%;
 }
 
-.change-pass-back-button{
-  border: var(--blue) 3px solid;
+.change-pass-back-button, .change-pass-submit-button{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
-}
-
-.submitBtn, #choose-photo-btn{
-  background-color: var(--blue);
-  color: white;
-  border: none;
   border-radius: 120px;
-  width: 146.656px;
-  height:  46.6562px;
-  cursor: pointer;
-  font-size: 1rem;
+  width: 11em;
+  height: 3.5em;
 }
 
 /***************************************************************************************************************/
@@ -265,7 +246,6 @@ fieldset input{
   gap: 0.5rem;
 }
 
-
 #upload-new-pic-popup div{
   text-align: center;
 }
@@ -279,11 +259,9 @@ fieldset input{
   width: 32px;
   height: 31px;
   border-radius: 100%;
-  background-color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
 }
 
 #upload-new-pic-popup button img{
@@ -291,14 +269,11 @@ fieldset input{
   height: 13.62px;
 }
 
-#my-profile-update-button:hover{
-  transition: 0.5s all ease-in-out;
-  background-color: var(--blue-button-hover);
-  box-shadow: var(--box-shadow);
-  transform: var(--button-hover-scale);
+#choose-photo-btn{
+  border-radius: 120px;
+  width: 146.656px;
+  height:  46.6562px;
 }
-
-
 
 /***************************************************************************************************************/
 /***** PAGE 2 ************************************************************************************/
@@ -333,11 +308,8 @@ h2{
 
 /*PAGE 3*/
 #my-profile-back-button{
-  border: none;
   justify-content: space-evenly;
   color: black;
-  border: 3px var(--blue) solid;
-  background-color: transparent;
 }
 
 #current-school-field, #school-address-field{
@@ -347,10 +319,7 @@ h2{
 #grade-level {
   width: 360px; 
   height: 50px;
-  background-color: var(--input-text-color);
-  border: 1px solid #ccc; 
   border-radius: 4px; 
-  padding: 1rem; 
   margin-top: 0.5rem;
 }
 

@@ -122,7 +122,7 @@ hr{
 
 
 /*CONTENT CONTAINER*/
-#content-container {
+#content-container, #application-content-container {
   width: 102rem;
   height: 51rem;
   background-color: white;

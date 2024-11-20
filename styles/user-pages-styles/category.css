@@ -53,8 +53,6 @@ body{
   width: 144px;
   height: 34px;
   border-radius: 11px;
-  color: white;
-  background-color: var(--green);
   position: absolute;
   border: none;
   bottom: -10px;
@@ -108,14 +106,13 @@ body{
 }
 
 /*LIST OF REQUIREMENT*/
-
-
 .list-of-requirements-container{
   width: 760px;
   height: 650px;
   border: 2px black solid;
   border-radius: 20px;
   margin-left: 2rem;
+
 }
 
 .list-of-requirements-container header, .application-date-container header, .available-slots-container header{
@@ -135,6 +132,9 @@ body{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  height: 480px;
+  overflow-y: auto;
+  margin-bottom: 60px;
 }
 
 
@@ -145,6 +145,7 @@ body{
   font-weight: 600;
   border-radius: 20px;
   margin-left: 53%;
+  margin-top: 30%;
 }
 
 /*APPLICATION DATE*/
@@ -172,9 +173,6 @@ body{
 }
 
 .application-available-container button{
-  background-color: var(--green);
-  color: white;
-  border: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

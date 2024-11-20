@@ -1,0 +1,88 @@
+#application-content-container div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0px 2rem;
+  margin-top: 1rem;
+}
+
+#application-content-container p{
+  line-height: 2rem;
+}
+
+#application-content-container h1{
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+span{
+  font-weight: 800;
+}
+
+.button-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.button-container a{
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 120px;
+  width: 11em;
+  height: 3.5em;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PERSONAL INFO*/
+#personal-info-form{
+  border: 2px black solid;
+  padding: 1rem;
+}
+
+.personal-info-main-container{
+  border: 2px red solid;
+  padding: 1rem;
+}
+
+.program-category-container{
+  border: 2px green solid;
+  padding: 1rem;
+}
+
+#category-dropdown{
+  background-color: var(--input-text-color); 
+  border: 1px solid #ccc;
+  width: 835px;
+  height: 50px;
+  padding: 0rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+#category-dropdown option{
+  width: 835px;
+}
+
+.application-personal-info-container{
+  border: 2px red solid;
+  padding: 2rem;
+}
+
+.application-personal-info-container .personal-info-row{
+}
+
+.application-personal-info-container input{
+  margin: 0px;
+  width: 360px;
+  height: 50px;
+}
+
+#grade-level{
+  width: 360px;
+}

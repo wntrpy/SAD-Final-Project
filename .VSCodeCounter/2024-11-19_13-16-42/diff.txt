@@ -1,0 +1,47 @@
+Date : 2024-11-19 13:16:42
+Directory : d:\vscode projs\web\SAD final proj backup
+Total : 15 files,  929 codes, 65 comments, 106 blanks, all 1100 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          5 |        712 |         80 |         77 |        869 |
+| CSS        |          8 |        225 |        -20 |         31 |        236 |
+| JavaScript |          2 |         -8 |          5 |         -2 |         -5 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                           |         15 |        929 |         65 |        106 |      1,100 |
+| html                                                                                        |          5 |        712 |         80 |         77 |        869 |
+| html\applicants html                                                                        |          5 |        712 |         80 |         77 |        869 |
+| scripts                                                                                     |          2 |         -8 |          5 |         -2 |         -5 |
+| styles                                                                                      |          8 |        225 |        -20 |         31 |        236 |
+| styles (Files)                                                                              |          4 |       -334 |        -42 |        -64 |       -440 |
+| styles\user-pages-styles                                                                    |          4 |        559 |         22 |         95 |        676 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                    | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-category.html     | HTML       |        277 |         27 |         44 |        348 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-dashboard.html    | HTML       |          0 |          0 |         -4 |         -4 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-my-profile-2.html | HTML       |        254 |         21 |         20 |        295 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-my-profile-3.html | HTML       |        201 |         20 |         17 |        238 |
+| d:\vscode projs\web\SAD final proj backup\html\applicants html\applicants-my-profile.html   | HTML       |        -20 |         12 |          0 |         -8 |
+| d:\vscode projs\web\SAD final proj backup\scripts\login.js                                  | JavaScript |         -1 |         -1 |         -1 |         -3 |
+| d:\vscode projs\web\SAD final proj backup\scripts\my-profile.js                             | JavaScript |         -7 |          6 |         -1 |         -2 |
+| d:\vscode projs\web\SAD final proj backup\styles\calendar.css                               | CSS        |        -92 |          0 |        -20 |       -112 |
+| d:\vscode projs\web\SAD final proj backup\styles\general.css                                | CSS        |          4 |        -30 |          0 |        -26 |
+| d:\vscode projs\web\SAD final proj backup\styles\layout.css                                 | CSS        |          1 |          0 |          1 |          2 |
+| d:\vscode projs\web\SAD final proj backup\styles\my-profile.css                             | CSS        |       -247 |        -12 |        -45 |       -304 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\calendar.css             | CSS        |         92 |          0 |         20 |        112 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\category.css             | CSS        |        164 |          6 |         23 |        193 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\dashboard.css            | CSS        |          7 |          0 |          0 |          7 |
+| d:\vscode projs\web\SAD final proj backup\styles\user-pages-styles\my-profile.css           | CSS        |        296 |         16 |         52 |        364 |
+| Total                                                                                       |            |        929 |         65 |        106 |      1,100 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
