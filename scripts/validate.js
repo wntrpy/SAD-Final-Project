@@ -74,7 +74,7 @@ function checkCredentials(emailInput, passwordInput) {
     }
   }
 
-  // If no match is found, show error message and return null
+  // If no match is found, show error message and return 
   Swal.fire({
     icon: "error",
     title: "Error",

@@ -40,10 +40,9 @@ const accounts = { //key = account email
 
 function testLogin(event) {
   event.preventDefault();
-
   const emailInput = document.querySelector("#email-field").value.trim();
   const passwordInput = document.querySelector("#password-field").value.trim();
-
+  
   if (!checkIfFieldsAreEmpty(emailInput, passwordInput)) {
     return;
   }

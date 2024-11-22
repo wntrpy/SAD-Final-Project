@@ -11,11 +11,15 @@ a {
   text-decoration: none;
 }
 
+span{
+  font-weight: 800;
+}
+
 body {
   background-color: var(--bg);
 }
 
-button {
+button{
   cursor: pointer;
 }
 
@@ -36,23 +40,15 @@ select {
   --blue: #032447;
   --gray: #545454;
   --input-text-color: #f3f4f6;
-  --category-cards: #EDE7BB;
 
-  /*button states*/
+  /*states*/
   --button-active-state: #D9D9D9;
-  --button-hover-scale: scale(1.05); 
+  --button-hover-scale: scale(1.05);
   --nav-hover-active-state: rgba(217, 217, 217, 0.21);
 
   /* Shadow */
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   --inner-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  /*SIZES*/
-
-  /*LP INPUT SIZES*/
-  --lp-input-width: 16.5rem;
-  --lp-input-height: 3.863rem;
-  --lp-header-font-size: 1.5rem;
 }
 
 
@@ -61,16 +57,17 @@ select {
 /***************************************************************************************************************/
 .login-btn,
 .submitBtn,
-#my-profile-update-button, 
+#my-profile-update-button,
 .my-profile-next-button,
 #upload-new-pic-popup .new-pic-back-button,
 #choose-photo-btn,
 .change-pass-submit-button,
-.category-card button, 
+.category-card button,
 .category-card-large button,
 .application-available-container button,
-#application-form-next-button
-{
+#application-form-next-button,
+.choose-file-button,
+.replace-file-button {
   background-color: var(--green);
   border: none;
   color: white;
@@ -86,19 +83,18 @@ select {
 /***************************************************************************************************************/
 .login-btn:hover,
 .submitBtn:hover,
-#my-profile-update-button:hover, 
+#my-profile-update-button:hover,
 .my-profile-next-button:hover,
 #upload-new-pic-popup .new-pic-back-button:hover,
 #choose-photo-btn:hover,
 .change-pass-submit-button:hover,
-.category-card button:hover, 
+.category-card button:hover,
 .category-card-large button:hover,
 .application-available-container button:hover,
 #application-form-next-button:hover,
-#proceed-button:hover
-{
+#proceed-button:hover {
   transition: 0.5s all ease-in-out;
-  background-color: var(--green); 
+  background-color: var(--green);
   transform: var(--button-hover-scale);
 }
 
@@ -109,14 +105,14 @@ select {
 .back-button-register,
 #my-profile-back-button,
 .change-pass-back-button,
-#application-form-back-button
-{
+#application-form-back-button,
+.application-file-status {
   border: var(--green) 3px solid;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  text-align:center;
+  text-align: center;
   font-size: 1rem;
   color: black;
   font-weight: 600;
@@ -127,15 +123,14 @@ select {
 /***** ALL INPUT ************************************************************************************/
 /***************************************************************************************************************/
 .register-inputs-group div input,
-#email-field, 
+#email-field,
 #password-field,
 #change-password-popup input:not([type="submit"]),
 fieldset input,
-.application-personal-info-container input,
-.program-contact-info-container div input
-{
+.application-form-content-second-row input,
+.application-form-content-first-row div input {
   border: 1px solid #ccc;
-  background-color: var(--input-text-color); 
+  background-color: var(--input-text-color);
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -146,13 +141,11 @@ fieldset input,
 /***** ALL DROPDOWN ************************************************************************************/
 /***************************************************************************************************************/
 #grade-level,
-#category-dropdown
-{
+#category-dropdown {
   background-color: var(--input-text-color);
-  border: 1px solid #ccc; 
-  padding: 1rem; 
+  border: 1px solid #ccc;
+  padding: 1rem;
   border-radius: 10px;
 }
 
 /*LAHAT ELEMENTS NA MAY SAME STYLE DITO ILALAGAY KESA PAULIT ULIT KADA PAGES*/
-

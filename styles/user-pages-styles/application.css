@@ -15,9 +15,6 @@
   margin-left: 2rem;
 }
 
-span{
-  font-weight: 800;
-}
 
 .button-container{
   display: flex;
@@ -40,24 +37,28 @@ span{
 }
 
 /*PERSONAL INFO*/
-#personal-info-form {
+.application-form{
   margin-top: 3rem;
 }
 
-.personal-info-main-container {
-  margin-bottom: 16%;
+.application-form label{
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.program-category-container {
+
+.application-form-main-container{
+}
+
+.application-form-content-first-row {
   margin-bottom: 20px;
   margin-left: 1.75rem;
 }
 
-
-.program-category-container label{
-  font-weight: 600;
-  font-size: 1.5rem;
+.application-form-content-first-row div{
+  padding: 0px !important;
 }
+
 
 #category-dropdown {
   width: 700px;
@@ -69,16 +70,16 @@ span{
   color: gray;
 }
 
-.application-personal-info-container {
+.application-form-content-second-row {
 }
 
-.application-personal-info-container .personal-info-row {
+.application-form-content-second-row .personal-info-row {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.application-personal-info-container input,
+.application-form-content-second-row input,
 #grade-level {
   width: calc(25% - 10px); 
   height: 60px;
@@ -95,6 +96,10 @@ span{
   flex-direction: row !important;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  bottom: 120px;
+  left: 260px;
+  right: 25px;
 }
 
 .personal-info-form-footer div{
@@ -115,26 +120,106 @@ span{
 }
 
 
+/*family*/
+#family-info-form{
+  margin: 0px;
+}
+
+#family-info-form h1{
+  padding-left: 3.5rem; 
+  font-size: 3rem;
+}
+
 /*CONTACT INFO PAGE*/
 .program-contact-info-container{
 
 }
 
-.program-contact-info-container label{
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-.program-contact-info-container div{
+.application-form-content-first-row div{
   display: flex;
   flex-direction: row !important;
 }
 
-.program-contact-info-container div input{
+.application-form-content-first-row div input{
   width: 360px;
   height: 60px;
 }
 
 
+/*DOCUMENT SUBMISSION*/
+#document-list-container{
+  padding: 0rem 2rem 0rem 2rem;
+}
 
-/*LINISIN MO CSS MO ANDUMI TIGNAN, PATI MGA NAMES NG VARS*/
+.document-list-table{
+  height: 620px;
+  border-radius: 20px;
+  border: 2px black solid;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.document-list-table header{
+  border: 2px black solid;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  border: none;
+  padding: 0rem 2rem 1rem 1rem;
+  margin-bottom: -18px !important;
+}
+
+.document-list-table header div{
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.document-list-content{
+  height: 550px;
+  margin: 0px !important;
+  padding: 0px !important;
+  border-top: 2px black solid;
+  overflow-y: auto;
+}
+
+.document-content-card{
+  width: 100%;
+  height: 100px;
+  margin: 0px !important;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#application-document-name{
+  max-width: 650px;
+  font-weight: 600;
+}
+
+.document-content-card p{
+  font-size: 1.25rem;
+}
+
+.document-content-card div{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 100px !important;
+  height: 100%;
+  margin-top: 0px !important;
+}
+
+.document-content-card button, .application-file-status{
+  width: 136px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+#file-input {
+  display: none; 
+}

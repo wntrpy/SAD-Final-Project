@@ -38,7 +38,7 @@ body{
 .category-card, .category-card-large{
   width: 431px;
   height: 101px;
-  background-color: var(--category-cards);
+  background-color: var(--yellow);
   border-radius: 20px;
   position: relative;
   display: flex;
@@ -135,6 +135,7 @@ body{
   height: 480px;
   overflow-y: auto;
   margin-bottom: 60px;
+  line-height: 2.5rem;
 }
 
 

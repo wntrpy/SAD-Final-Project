@@ -21,6 +21,7 @@
             class="notification-container"
           >
             <img src="/img/icons/notification-icon.png" alt="" />
+            <div class="notification-count">0</div>
           </a>
         </div>
 
@@ -79,26 +80,24 @@
       <!--CONTENT CONTAINER-->
       <!--===========================================================================================================================================-->
       <div id="application-content-container">
-        <form id="personal-info-form">
+        <form id="personal-info-form" class="application-form">
           <!--Container for Category and Personal Info-->
-          <div class="personal-info-main-container">
+          <div class="application-form-main-container">
             <!--Category Container-->
-            <div class="program-category-container">
+            <div class="application-form-content-first-row">
               <label>Programang nais mapabilang</label>
               <select id="category-dropdown">
                 <option value="" disabled selected>Select a category</option>
                 <option value="os-private">OS PRIVATE</option>
-                <option value="suc-lc">
-                  STATE/LOCAL UNIVERSITIES AND COLLEGES (SUC's /LC's)
-                </option>
+                <option value="suc-lc">SUC's / LC's</option>
                 <option value="shs-public">SHS PUBLIC</option>
                 <option value="shs-private">SHS PRIVATE</option>
               </select>
             </div>
 
             <!--APPLICATION PERSONAL INFO CONTAINER-->
-            <div class="application-personal-info-container">
-              <h2 style="margin-left: 1.75rem">Personal Information</h2>
+            <div class="application-form-content-second-row">
+              <label style="margin-left: 2rem">Personal Information</label>
               <!--FIRST ROW-->
               <div
                 class="personal-info-row"
@@ -155,6 +154,7 @@
               <a
                 href="/html/applicants html/applicants-html-application/applicants-application-contact-info.html"
                 id="application-form-next-button"
+                onclick="saveSelectedCategory()"
               >
                 Next
               </a>
@@ -181,5 +181,18 @@
     <!--SCRIPTS-->
     <!--===========================================================================================================================================-->
     <script src="/scripts/open-popups.js"></script>
+    <script src="/scripts/category.js"></script>
+    <script>
+      function saveSelectedCategory() {
+        const categoryDropdown = document.getElementById("category-dropdown");
+        const selectedCategory = categoryDropdown.value;
+
+        if (selectedCategory) {
+          localStorage.setItem("selectedCategory", selectedCategory);
+        } else {
+          alert("Please select a category before proceeding.");
+        }
+      }
+    </script>
   </body>
 </html>
