@@ -65,8 +65,9 @@ select {
 .category-card button,
 .category-card-large button,
 .application-available-container button,
-#application-form-next-button,
+.application-form-next-button,
 .choose-file-button,
+.personal-info-form-footer a:not(.application-form-back-button),
 .replace-file-button {
   background-color: var(--green);
   border: none;
@@ -76,6 +77,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 /***************************************************************************************************************/
@@ -91,7 +93,6 @@ select {
 .category-card button:hover,
 .category-card-large button:hover,
 .application-available-container button:hover,
-#application-form-next-button:hover,
 #proceed-button:hover {
   transition: 0.5s all ease-in-out;
   background-color: var(--green);
@@ -105,7 +106,7 @@ select {
 .back-button-register,
 #my-profile-back-button,
 .change-pass-back-button,
-#application-form-back-button,
+.application-form-back-button,
 .application-file-status {
   border: var(--green) 3px solid;
   display: flex;
